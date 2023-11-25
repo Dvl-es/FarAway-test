@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./frontend/
+    image: faraway-frontend:test
+    environment:
+      REACT_APP_NFT_MANAGER_ADDRESS: "0xC6aB23e1753B5750dB14852046220Eca5bfaE5DA"
+      REACT_APP_API_ENDPOINT: "http://localhost:6565/"
+    ports:
+      - target: 3000
+        published: 8081
+        protocol: tcp
+    depends_on:
+      - backend
+  backend:
+    build: ./backend/
+    image: faraway-backend:test
+    environment:
+      NFT_MANAGER_ADDRESS: "0xC6aB23e1753B5750dB14852046220Eca5bfaE5DA"
+      RPC_URL: <WSS_RPC_URL_HERE>
+    ports:
+      - target: 6565
+        published: 6565
+        protocol: tcp

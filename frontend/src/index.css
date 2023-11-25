@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.block {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.apiBtn {
+  width: 200px;
+}
+
+.button {
+  flex: 1
+}
+
+
+#createCollectionBtn {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#mintBtn {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 50px;
+}
