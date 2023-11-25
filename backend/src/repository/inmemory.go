@@ -31,8 +31,6 @@ func (s *InMemoryStorage) AddCollectionCreatedEvent(collectionCreatedEvent *cont
 		TxHash:  collectionCreatedEvent.Raw.TxHash,
 	}
 
-	s.tokensMx.Lock()
-	defer s.tokensMx.Unlock()
 	s.collections[collection.Address] = collection
 }
 
