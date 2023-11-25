@@ -1,3 +1,5 @@
+# FarAway test 
+
 1. Develop a smart contract(s) on Solidity for deploying an NFT collection (ERC721) with several arguments (a name, 
 symbol). The smart contract should emit the following events:
    a. CollectionCreated(address collection, string name, string symbol)
@@ -7,3 +9,10 @@ symbol). The smart contract should emit the following events:
    a. Create a new NFT collection with a specified name and symbol (from the user input);
    b. Mints a new NFT item with a specified collection address (only created at 3.a), token id, token URI.
    Estimated time: ~ 60 minutes.
+
+
+
+### Start up:
+* Set wss rpc endpoint(sepolia) in docker compose file
+* run `docker compose up`
+* open http://localhost:8081
