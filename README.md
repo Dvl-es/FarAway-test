@@ -1,4 +1,4 @@
-# FarAway test 
+# test 
 
 1. Develop a smart contract(s) on Solidity for deploying an NFT collection (ERC721) with several arguments (a name, 
 symbol). The smart contract should emit the following events:
